@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.principal {
+  background-color: #007bff;
+  color: white;
+  padding: 100px 20px;
+}
+.principal h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.principal p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.principal .cta {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 18px;
+  color: #555;
+}
+.servicios{
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.servicios h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.servicio-item{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer nav ul{
+    list-style: none;
+    padding: 0;
+}
+footer nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+footer nav ul li a{
+    color: white;
+    text-decoration: none;
+}

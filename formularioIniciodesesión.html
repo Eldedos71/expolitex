@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="formularioIniciodesesión.css" />
+    <link rel="icon" href="Imágenes/Logo.jpeg" type="image/gif" />
+  </head>
+  <body>
+    <form id="formularioIniciodesesión" action="pagina1.html">
+      <fieldset>
+        <label for="nombreUsuario">Nombre de Usuario</label>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" required />
+
+        <label for="contraseñaUsuario">Contraseña</label>
+        <input
+          type="password"
+          name="contraseñaUsuario"
+          id="contraseñaUsuario"
+          required
+        />
+
+        <button type="submit" class="botonIniciodeSesión">
+          Iniciar Sesión
+        </button>
+      </fieldset>
+    </form>
+    <p id="errorr" style="color: red"></p>
+    <script src="formularioiniciodesesión.js"></script>
+  </body>
+</html>

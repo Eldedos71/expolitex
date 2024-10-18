@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resgitro</title>
+    <link rel="stylesheet" href="formulario.css" />
+    <link rel="icon" href="Imágenes/Logo.jpeg" type="image/gif" />
+  </head>
+  <body>
+    <form id="registroUsuario" action="formularioIniciodesesión.html">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" required />
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required />
+
+        <label for="fecha">Fecha De Nacimiento</label>
+        <input type="date" name="fecha" id="fecha" required />
+
+        <label for="telefono">Teléfono</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          pattern="[0-9]{10}"
+          title="Debe tener exactamente 10 números"
+          required
+        />
+        <label for="genero">Género</label>
+        <input list="generos" name="genero" id="genero" />
+        <datalist id="generos">
+          <option value="Hombre"></option>
+          <option value="Mujer"></option>
+          <option value="+31 Tipos de Gay"></option>
+          <option value="Depende del Día"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Usuario</legend>
+        <label for="nombreUsuario">Nombre de Usuario</label>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" required />
+
+        <label for="contraseñaUsuario">Contraseña</label>
+        <input
+          type="password"
+          name="contraseñaUsuario"
+          id="contraseñaUsuario"
+          required
+        />
+
+        <label for="confirmarContraseñaUsuario">Confirmar Contraseña</label>
+        <input
+          type="password"
+          name="confirmarContraseñaUsuario"
+          id="confirmarContraseñaUsuario"
+          required
+        />
+      </fieldset>
+      <button type="submit" class="botónRegistroUsuario">Registarse</button>
+      <p id="error" style="color: red"></p>
+    </form>
+    <script src="Formulario.js"></script>
+  </body>
+</html>

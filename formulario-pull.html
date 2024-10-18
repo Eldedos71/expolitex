@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToneUpZone</title>
+    <link rel="stylesheet" href="formulario-pull.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Rutina sin Equipamiento</h2>
+      <p>Por favor, ingresa tus repeticiones y series para cada ejercicio.</p>
+
+      <!-- Formulario para cada ejercicio -->
+      <form action="guardar_rutina.html" method="POST">
+        <!-- Ejercicio 1 -->
+        <div class="ejercicio">
+          <h3>Dominadas</h3>
+          <div class="media-container">
+            <img src="Imágenes/Pull/pull ups.jfif" alt="Pull-ups" />
+          </div>
+          <label for="repeticiones1">Número de repeticiones:</label>
+          <input
+            type="number"
+            id="repeticiones1"
+            name="repeticiones1"
+            min="1"
+            required
+          />
+
+          <label for="series1">Número de series:</label>
+          <input type="number" id="series1" name="series1" min="1" required />
+
+          <label for="pr1">¿Hiciste PR?</label>
+          <select id="pr1" name="pr1">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor1">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor1" id="pr_valor1" min="1" />
+
+          <select name="pr_tipo1" id="pr_tipo1">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="ejercicio">
+          <h3>Remo con mancuerna</h3>
+          <div class="media-container">
+            <video width="500px" height="300px" controls loop>
+              <source
+                src="Videos/Pull/02921201-Dumbbell-Bent-over-Row_Back.mp4"
+                alt="Remo con mancuerna"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <label for="repeticiones2">Número de repeticiones:</label>
+          <input
+            type="number"
+            id="repeticiones2"
+            name="repeticiones2"
+            min="1"
+            required
+          />
+
+          <label for="series2">Número de series:</label>
+          <input type="number" id="series2" name="series2" min="1" required />
+
+          <label for="pr2">¿Hiciste PR?</label>
+          <select id="pr2" name="pr2">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor2">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor2" id="pr_valor2" min="1" />
+
+          <select name="pr_tipo2" id="pr_tipo2">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="ejercicio">
+          <h3>Remo Invertido</h3>
+          <div class="media-container">
+            <video width="500px" height="300px" controls loop>
+              <source
+                src="Videos/Pull/04991201-Inverted-Row_Back.mp4"
+                alt="Push-up Inclinadas"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <label for="repeticiones3">Númeor de repeticiones:</label>
+          <input
+            type="number"
+            id="repeticiones3"
+            name="repeticiones3"
+            min="1"
+            required
+          />
+
+          <label for="series3">Número de series:</label>
+          <input type="number" id="series3" name="series3" min="1" required />
+
+          <label for="pr3">¿Hiciste PR?</label>
+          <select id="pr3" name="pr3">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor3">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor3" id="pr_valor3" min="1" />
+
+          <select name="pr_tipo3" id="pr_tipo3">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="ejercicio">
+          <h3>Curl con mancuerna</h3>
+          <div class="media-container">
+            <video width="500px" height="300px" controls loop>
+              <source
+                src="Videos/Pull/02941201-Dumbbell-Biceps-Curl_Upper-Arms.mp4"
+                alt="Curl con mancuerna"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <label for="repeticiones4">Número de repeticiones:</label>
+          <input
+            type="number"
+            id="repeticiones4"
+            name="repeticiones4"
+            min="1"
+            required
+          />
+
+          <label for="series4">Número de series:</label>
+          <input type="number" id="series4" name="series4" min="1" required />
+
+          <label for="pr4">¿Hiciste PR?</label>
+          <select id="pr4" name="pr4">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor4">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor4" id="pr_valor4" min="1" />
+
+          <select name="pr_tipo4" id="pr_tipo4">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+
+        <!-- Ejercicio 5 -->
+        <div class="ejercicio">
+          <h3>Plancha</h3>
+          <div class="media-container">
+            <video width="500px" height="300px" controls loop>
+              <source
+                src="Videos/Pull/04631201-Front-Plank-m_waist.mp4"
+                alt="Push-up Inclinadas"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <label for="repeticiones5">Tiempo en segundos:</label>
+          <input
+            type="number"
+            id="repeticiones5"
+            name="repeticiones5"
+            min="1"
+            required
+          />
+
+          <label for="series5">Número de series:</label>
+          <input type="number" id="series5" name="series5" min="1" required />
+
+          <label for="pr5">¿Hiciste PR?</label>
+          <select id="pr5" name="pr5">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor5">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor5" id="pr_valor5" min="1" />
+
+          <select name="pr_tipo5" id="pr_tipo5">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+        <!-- Ejercicio 6 -->
+        <div class="ejercicio">
+          <h3>Superman</h3>
+          <div class="media-container">
+            <img
+              src="Imágenes/Pull/08041101-Superman_Waist_small.jpg"
+              alt="Flexiones de Pica"
+              width="100%"
+            />
+          </div>
+          <label for="repeticiones5">Número de repeticiones:</label>
+          <input
+            type="number"
+            id="repeticiones5"
+            name="repeticiones5"
+            min="1"
+            required
+          />
+
+          <label for="series5">Número de series:</label>
+          <input type="number" id="series5" name="series5" min="1" required />
+
+          <label for="pr5">¿Hiciste PR?</label>
+          <select id="pr5" name="pr5">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="pr_valor5">¿De cuánto fue tu PR?</label>
+          <input type="number" name="pr_valor5" id="pr_valor5" min="1" />
+
+          <select name="pr_tipo5" id="pr_tipo5">
+            <option value="Kg">Kg</option>
+            <option value="Lbs">Lbs</option>
+            <option value="Reps">Reps</option>
+          </select>
+        </div>
+
+        <!-- Botón de envío -->
+        <button type="submit">Guardar Rutina</button>
+      </form>
+    </main>
+  </body>
+</html>
